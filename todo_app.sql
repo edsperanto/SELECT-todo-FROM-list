@@ -27,3 +27,4 @@ INSERT INTO "tasks" (title, description, created_at) VALUES ('mistake 1', 'a tes
 INSERT INTO "tasks" (title, description, created_at) VALUES ('mistake 2', 'another test entry', now());
 INSERT INTO "tasks" (title, description, created_at) VALUES ('mistake 3', 'another test entry', now());
 SELECT title FROM "tasks" WHERE title LIKE '%mistake%';
+DELETE FROM "tasks" WHERE title = 'mistake 1';
