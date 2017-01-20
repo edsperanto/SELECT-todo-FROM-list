@@ -11,3 +11,5 @@ CREATE TABLE "tasks" (
 	updated_at timestamp NULL,
 	complete boolean NOT NULL
 );
+
+ALTER TABLE "tasks" DROP COLUMN complete;
