@@ -3,6 +3,7 @@ CREATE USER "michael";
 DROP DATABASE IF EXISTS "todo_app";
 CREATE DATABASE "todo_app";
 \connect todo_app;
+DROP TABLE IF EXISTS "tasks";
 CREATE TABLE "tasks" ( 
 	id serial NOT NULL PRIMARY KEY,
 	title VARCHAR(255) NOT NULL,
