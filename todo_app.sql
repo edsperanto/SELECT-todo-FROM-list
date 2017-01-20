@@ -15,3 +15,5 @@ CREATE TABLE "tasks" (
 
 ALTER TABLE "tasks" DROP COLUMN complete;
 ALTER TABLE "tasks" ADD COLUMN completed_at timestamp NULL;
+ALTER TABLE "tasks" ALTER COLUMN updated_at SET NOT NULL;
+ALTER TABLE "tasks" ALTER COLUMN updated_at SET DEFAULT now();
