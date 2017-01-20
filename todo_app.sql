@@ -20,3 +20,4 @@ ALTER TABLE "tasks" ALTER COLUMN updated_at SET DEFAULT now();
 INSERT INTO "tasks" VALUES (DEFAULT, 'Study SQL', 'Complete this exercise', now(), now(), NULL);
 INSERT INTO "tasks" (title, description, created_at) VALUES ('Study PostgreSQL', 'Read all the documentation', now());
 SELECT title FROM "tasks" WHERE completed_at IS NULL;
+UPDATE "tasks" SET completed_at = now() WHERE title = 'Study SQL';
