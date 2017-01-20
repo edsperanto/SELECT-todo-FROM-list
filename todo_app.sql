@@ -1,2 +1,2 @@
-DROP USER "michael";
+DROP USER IF EXISTS "michael";
 CREATE USER "michael";
