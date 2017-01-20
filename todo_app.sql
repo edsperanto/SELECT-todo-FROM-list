@@ -14,3 +14,4 @@ CREATE TABLE "tasks" (
 );
 
 ALTER TABLE "tasks" DROP COLUMN complete;
+ALTER TABLE "tasks" ADD COLUMN completed_at timestamp NULL;
