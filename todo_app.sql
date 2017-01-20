@@ -29,3 +29,4 @@ INSERT INTO "tasks" (title, description, created_at) VALUES ('mistake 3', 'anoth
 SELECT title FROM "tasks" WHERE title LIKE '%mistake%';
 DELETE FROM "tasks" WHERE title = 'mistake 1';
 SELECT title, description FROM "tasks" WHERE title LIKE '%mistake%';
+DELETE FROM "tasks" WHERE title LIKE '%mistake%';
