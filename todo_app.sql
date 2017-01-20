@@ -26,3 +26,4 @@ SELECT title, description FROM "tasks" ORDER BY created_at DESC;
 INSERT INTO "tasks" (title, description, created_at) VALUES ('mistake 1', 'a test entry', now());
 INSERT INTO "tasks" (title, description, created_at) VALUES ('mistake 2', 'another test entry', now());
 INSERT INTO "tasks" (title, description, created_at) VALUES ('mistake 3', 'another test entry', now());
+SELECT title FROM "tasks" WHERE title LIKE '%mistake%';
